@@ -1,12 +1,12 @@
-<div class="main-content">
-  <div class="main-menu">
+<div class='main-content'>
+  <div class='main-menu'>
     <h1>Welcome to Blind Tiger</h1>
   </div>
 
   <hr>
 
-  <div class="button-container">
-    <button class="btn btn-default">New Game</button>
-    <button class="btn btn-default">Join Game</button>
+  <div class='button-container'>
+    <%= button_to 'New Game', new_room_path, method: 'get', class: 'btn btn-default' %>
+    <%= button_to 'Join Game', join_room_path, method: 'get', class: 'btn btn-default' %>
   </div>
 </div>
