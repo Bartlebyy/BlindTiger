@@ -1,12 +1,40 @@
 <div class='main-content'>
   <div class='main-menu'>
-    <h1>Welcome to Blind Tiger</h1>
+    <h1>Blind Tiger</h1>
   </div>
 
   <hr>
 
-  <div class='button-container'>
-    <%= button_to 'New Game', new_room_path, method: 'get', class: 'btn btn-default' %>
-    <%= button_to 'Join Game', join_room_path, method: 'get', class: 'btn btn-default' %>
-  </div>
+  <%- if params['action'] == 'home' %>
+
+    <div class='button-container'>
+      <%= button_to 'New Game', new_room_path, method: 'get', class: 'btn btn-simple' %>
+      <%= button_to 'Join Game', join_room_path, method: 'get', class: 'btn btn-simple' %>
+    </div>
+
+  <% end %>
+
+  <%- if params['action'] == 'new' %>
+
+    <div class='create-room'>
+      <%= form_for :player, url: room_path, method: :post do |f| %>
+
+        <div class='input-form-container mbl'>
+          <%= f.text_field :name,
+            class: 'form-control',
+            placeholder: 'Enter your name' %>
+        </div>
+
+        <br>
+
+        <div class='button-container'>
+          <%= f.submit 'Create', class: 'btn btn-simple' %>
+          <%= button_to 'Back', static_home_path, method: 'get', class: 'btn btn-simple' %>
+        </div>
+
+      <% end %>
+
+    </div>
+
+  <% end %>
 </div>

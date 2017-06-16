@@ -1,13 +1,14 @@
 class RoomsController < ApplicationController
   def new
-    puts params
+    render static_home_path
   end
 
   def create
+    debugger
   end
 
   def join
-    puts params
+    render static_home_path
   end
 
   def update

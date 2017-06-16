@@ -1,3 +1,5 @@
 tmp
-/log
+*.log
+log/
 .DS_Store
+.byebug_history
