@@ -27,10 +27,6 @@ class RoomsController < ApplicationController
   def update
   end
 
-  def back
-    redirect_to static_home_path
-  end
-
   private
 
   def player_params

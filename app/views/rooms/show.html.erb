@@ -1,7 +1,14 @@
-<p>Token: <%= @room.token %></p>
+Waiting For Players...
+Access Code: <%= @room.token %>
+<hr>
 
-<p>Players:
-  <%- @players.each do |name| %>
-    <%= name %>
-  <% end %>
-</p>
+<%- @players.each_with_index do |name, index| %>
+  <%= name %>
+<% end %>
+
+<hr>
+
+<div class='button-container'>
+  <%= button_to 'Start Game', game_path, method: 'post', class: 'btn btn-simple' %>
+  <%= button_to 'Leave Game', static_home_path, method: 'get', class: 'btn btn-simple' %>
+</div>

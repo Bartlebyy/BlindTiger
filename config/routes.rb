@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resource :room, only: [:show, :new, :edit, :create, :update] do
-    get :back
-  end
+  resource :room, only: [:show, :new, :edit, :create, :update]
+
+  resource :game, only: [:show, :new, :create]
 
   get 'static/home'
 
