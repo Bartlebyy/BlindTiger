@@ -1,2 +1,27 @@
-<h1>Room#new</h1>
-<p>Find me in app/views/room/new.html.erb</p>
+<div class='main-content'>
+  <div class='main-menu'>
+    <h1>Blind Tiger</h1>
+  </div>
+
+  <hr>
+
+  <div class='create-room'>
+    <%= form_for :player, url: room_path, method: :post do |f| %>
+
+      <div class='input-form-container mbl'>
+        <%= f.text_field :name,
+          class: 'form-control',
+          placeholder: 'Enter your name' %>
+      </div>
+
+      <br>
+
+      <div class='button-container'>
+        <%= f.submit 'Create', class: 'btn btn-simple' %>
+        <%= link_to 'Back', back_room_path, method: 'get', class: 'btn btn-simple' %>
+      </div>
+
+    <% end %>
+
+  </div>
+</div>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resource :room, only: [:new, :create, :update] do
-    get :join
+  resource :room, only: [:show, :new, :edit, :create, :update] do
+    get :back
   end
 
   get 'static/home'

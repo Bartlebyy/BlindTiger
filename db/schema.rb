@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20170616214359) do
 
   create_table "rooms", force: :cascade do |t|
     t.string "token", null: false
+    t.index ["token"], name: "index_rooms_on_token", unique: true
   end
 
 end

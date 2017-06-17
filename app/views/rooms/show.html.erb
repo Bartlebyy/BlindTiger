@@ -1,0 +1,7 @@
+<p>Token: <%= @room.token %></p>
+
+<p>Players:
+  <%- @players.each do |name| %>
+    <%= name %>
+  <% end %>
+</p>
