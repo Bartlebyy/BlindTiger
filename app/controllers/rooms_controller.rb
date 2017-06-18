@@ -1,7 +1,7 @@
 class RoomsController < ApplicationController
 
   def show
-    @room = Room.find(params[:id])
+    @room = Room.find(params[:token])
     @players = @room.players.pluck(:name)
   end
 
@@ -18,7 +18,7 @@ class RoomsController < ApplicationController
       room = Room.create
       player.update_attributes(room_id: room.id)
 
-      redirect_to action: 'show', id: room.id
+      redirect_to action: 'show', token: room.token
     else
       render :new
     end

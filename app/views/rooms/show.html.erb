@@ -1,9 +1,9 @@
-Waiting For Players...
-Access Code: <%= @room.token %>
+<h4>Waiting For Players...</h4>
+<p>Access Code: <%= @room.token %></p>
 <hr>
 
 <%- @players.each_with_index do |name, index| %>
-  <%= name %>
+  <b><%= index + 1 %></b> <%= name %>
 <% end %>
 
 <hr>
