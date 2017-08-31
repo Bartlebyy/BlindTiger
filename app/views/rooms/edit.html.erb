@@ -1,2 +1,34 @@
-<h1>Room#edit</h1>
-<p>Find me in app/views/room/edit.html.erb</p>
+<div class='main-content'>
+  <div class='main-menu'>
+    <h1>Blind Tiger</h1>
+  </div>
+
+  <hr>
+
+  <div class='edit-room'>
+    <%= form_for :player, url: room_path, method: :put do |f| %>
+
+      <div class='input-form-container mbl'>
+        <%= f.text_field :token,
+          class: 'form-control',
+          placeholder: 'Enter an access code',
+          value: @token %>
+
+        <br>
+
+        <%= f.text_field :name,
+          class: 'form-control',
+          placeholder: 'Enter your name' %>
+      </div>
+
+      <br>
+
+      <div class='button-container'>
+        <%= f.submit 'Join', class: 'btn btn-simple' %>
+        <%= link_to 'Back', static_home_path, method: 'get', class: 'btn btn-simple' %>
+      </div>
+
+    <% end %>
+
+  </div>
+</div>

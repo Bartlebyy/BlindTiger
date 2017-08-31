@@ -3,12 +3,14 @@
 <hr>
 
 <%- @players.each_with_index do |name, index| %>
-  <b><%= index + 1 %></b> <%= name %>
+  <p>
+    <b><%= index + 1 %></b> <%= name %>
+  </p>
 <% end %>
 
 <hr>
 
 <div class='button-container'>
   <%= button_to 'Start Game', game_path, method: 'post', class: 'btn btn-simple' %>
-  <%= button_to 'Leave Game', static_home_path, method: 'get', class: 'btn btn-simple' %>
+  <%= button_to 'Leave Game', player_path, method: 'delete', class: 'btn btn-simple' %>
 </div>

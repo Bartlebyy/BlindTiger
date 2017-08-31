@@ -1,93 +1,95 @@
-slang: [
-  "Absinthe",
-  "Al Capone",
-  "Art Deco",
-  "Bathtub Gin",
-  "Bean-shooter",
-  "Bees knees",
-  "Beeswax",
-  "Big Cheese",
-  "Big Shot",
-  "Big House",
-  "Bitters",
-  "Blind pig",
-  "Bootleg",
-  "Bootlegger",
-  "Boozehound",
-  "Bourbon",
-  "Brandy",
-  "Casa Blanca",
-  "Cats Meow",
-  "Champagne",
-  "Charleston",
-  "Cocktails",
-  "Coffin varnish",
-  "Cognac",
-  "Cointreau",
-  "Copper",
-  "Corpse Reviver",
-  "Daisy",
-  "Duke Ellington",
-  "Fitzgerald",
-  "Flapper",
-  "Fuzz",
-  "Gams",
-  "Gatsby",
-  "Giggle juice",
-  "Giggle water",
-  "Gin",
-  "Gin Mill",
-  "Gin Rickey",
-  "Grenadine",
-  "Hair of the dog",
-  "Hanky-Panky",
-  "Highball",
-  "Hip flask",
-  "Horse liniment",
-  "Hooch",
-  "Hotsy-totsy",
-  "Ishkabibble",
-  "Jazz",
-  "Jazz Age",
-  "Juice Joint",
-  "Joint",
-  "Lackadaisy",
-  "Liqueur",
-  "Lollygagger",
-  "Maraschino",
-  "Martini",
-  "Mary Pickford",
-  "Mint julep",
-  "Moonshine",
-  "Nick Carraway",
-  "Old Fashioned",
-  "Old sport",
-  "Ossified",
-  "Phonus balonus",
-  "Prohibition",
-  "Ritzy",
-  "Roaring Twenties",
-  "Rum",
-  "Rummy",
-  "Rumrunner",
-  "Rum-running",
-  "Rye whiskey",
-  "Sazerac",
-  "Sidecar",
-  "Sleuth",
-  "Speakeasy",
-  "Spiffy",
-  "Spirits",
-  "Swanky",
-  "Swill",
-  "Tarantula Juice",
-  "Tequila",
-  "Tiger milk",
-  "Triple sec",
-  "Vermouth",
-  "Vodka",
-  "Whiskey",
-  "Whisper sister",
-  "White rum",
-  "Zelda"
-]
+slang:
+  - Absinthe
+  - Al Capone
+  - Art Deco
+  - Banana Oil
+  - Banana skirt
+  - Bathtub Gin
+  - Bean-shooter
+  - Bees knees
+  - Beeswax
+  - Bitters
+  - Blind pig
+  - Bootleg
+  - Bootlegger
+  - Boozehound
+  - Bourbon
+  - Brandy
+  - Carraway
+  - Casa Blanca
+  - Cats Meow
+  - Champagne
+  - Charleston
+  - Cocktails
+  - Coffin varnish
+  - Cognac
+  - Cointreau
+  - Copper
+  - Corpse Reviver
+  - Daisy
+  - Duke Ellington
+  - East Egg
+  - Fitzgerald
+  - Flapper
+  - Fuzz
+  - Gams
+  - Gatsby
+  - Giggle juice
+  - Giggle water
+  - Gin
+  - Gin Mill
+  - Gin Rickey
+  - Grenadine
+  - Hair of the dog
+  - Hanky-Panky
+  - Highball
+  - Hip flask
+  - Horse liniment
+  - Hooch
+  - Hotsy-totsy
+  - Ishkabibble
+  - Jazz
+  - Jazz Age
+  - Juice Joint
+  - Joint
+  - Lackadaisy
+  - Liqueur
+  - Lollygagger
+  - Maraschino
+  - Martini
+  - Mary Pickford
+  - Mint julep
+  - Moonshine
+  - Nifty
+  - Old Fashioned
+  - Old sport
+  - Phonus balonus
+  - Posilootly
+  - Prohibition
+  - Ritzy
+  - Roaring Twenties
+  - Rum
+  - Rummy
+  - Rumrunner
+  - Rum-running
+  - Rye whiskey
+  - Sazerac
+  - Sidecar
+  - Sleuth
+  - Speakeasy
+  - Spiffy
+  - Spirits
+  - Swanky
+  - Swill
+  - Tarantula Juice
+  - Tequila
+  - Tiger milk
+  - Triple sec
+  - Vermouth
+  - Vodka
+  - West Egg
+  - Whiskey
+  - Whisper sister
+  - White rum
+  - Zelda
+  - Zozzled

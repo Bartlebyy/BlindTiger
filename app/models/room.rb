@@ -6,8 +6,6 @@ class Room < ApplicationRecord
 
   before_create :set_access_token
 
-
-
   def set_access_token
     self.token = generate_token
   end
@@ -15,7 +13,9 @@ class Room < ApplicationRecord
   def generate_token
     loop do
       slang = YAML.load_file('lib/assets/slang.yml')
-      token = slang['slang'].sample().downcase
+      token = slang['slang'].sample()
+                            .downcase
+                            .tr(' ', '-') + '-' + rand(9999).to_s
       break token unless Room.where(token: token).exists?
     end
   end
