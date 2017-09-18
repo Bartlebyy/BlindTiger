@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   resource :game, only: [:show, :new, :create]
 
   resource :player, only: [:destroy]
+
+  mount ActionCable.server, at: '/cable'
 end

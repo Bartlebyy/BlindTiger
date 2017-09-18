@@ -2,8 +2,9 @@ class RoomsController < ApplicationController
 
   def show
     if authorized_player?
-      current_room
-      @players = @room.players.pluck(:name)
+      @players = current_room.players.pluck(:name)
+      ActionCable.server.broadcast 'room_channel',
+        players: @players
     else
       redirect_to edit_room_path(token: token)
     end

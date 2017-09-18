@@ -2,11 +2,13 @@
 <p>Access Code: <%= @room.token %></p>
 <hr>
 
-<%- @players.each_with_index do |name, index| %>
-  <p>
-    <b><%= index + 1 %></b> <%= name %>
-  </p>
-<% end %>
+<div class='js-player-names'>
+  <%- @players.each_with_index do |name, index| %>
+    <p class='js-player-name'>
+      <b><%= index + 1 %></b> <%= name %>
+    </p>
+  <% end %>
+</div>
 
 <hr>
 
