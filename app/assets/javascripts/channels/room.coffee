@@ -19,7 +19,7 @@ App.room = App.cable.subscriptions.create "RoomChannel",
     i = 0
     while i < players.length
       $('.js-player-names').append(
-        "<p class='js-player-name'><b>" + (i+1) + ' </b>'
-        + players[i] + '</p>')
+        "<p class='js-player-name'><b>" + (i+1) + ' </b>' + players[i] + '</p>'
+      )
       i++
 

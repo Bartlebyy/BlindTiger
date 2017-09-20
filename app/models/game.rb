@@ -1,4 +1,4 @@
 class Game < ApplicationRecord
-  has_one :room
+  belongs_to :room
   has_many :players, through: :room
 end

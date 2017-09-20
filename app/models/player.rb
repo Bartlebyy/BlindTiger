@@ -1,5 +1,5 @@
 class Player < ApplicationRecord
-  has_one :room
+  belongs_to :room, optional: true
   has_many :games, through: :room
 
   validates :name, presence: true, allow_blank: false
